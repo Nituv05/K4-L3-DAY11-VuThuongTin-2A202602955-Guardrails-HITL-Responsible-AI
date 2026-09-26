@@ -7,7 +7,8 @@
 - Chạy từ thư mục gốc: `python src/main.py --part 2`, `python src/main.py --part 3`, `python src/main.py --part 4`.
 - Tự kiểm: `pytest tests/smoke tests/public -q` và `python scripts/grade.py --submission-dir . --out outputs/grade_report.json`.
 - API key đặt trong `.env` trên máy; không commit file này.
-- Lần chạy Blue hiện tại: OpenRouter trả 404 cho `liquid/lfm-2.5-2.6b` vì không có endpoint. Runtime chỉ fallback sang `liquid/lfm-2.5-2.6b:free` khi gặp đúng lỗi này; `outputs/results.json` ghi cả model được yêu cầu và model đã dùng. Cần xác nhận ngoại lệ này với Key Coach khi chấm.
+- Lần chạy Blue: OpenRouter trả 404 cho `liquid/lfm-2.5-2.6b` vì không có endpoint. Runtime chỉ fallback sang `liquid/lfm-2.5-2.6b:free` khi gặp đúng lỗi này; `outputs/results.json` ghi cả model được yêu cầu và model đã dùng.
+- Theo xác nhận của học viên, Key Coach đã chấp nhận ngoại lệ dùng biến thể `:free` cho bài này.
 
 > 👤 **Hình thức:** bài tập **cá nhân** (1 người / 1 MSSV).  
 > 🎯 **Mục tiêu:** xây **Blue** (phòng thủ), rồi red-team **Red** + **Red Advance**.  
